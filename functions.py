@@ -1,35 +1,39 @@
-x = "2"
-y = int(x) * 45
-print y
-
-r = 6
-diameter = 2 * r
-print float(diameter) * (3 ** 2)
-print 2 * str(diameter)
-
-word = "Pneumonoultramicroscopicsilicovolcanoconiosis"
-lenword = len(word)
-print lenword
-print int(lenword) * 2
-print 2 * str(lenword)
-
 import math
 
-print math.factorial(len(word))
-print math.pi
-print len(str(math.pi)) - 2
+def add(a, b):
+	return a + b
+c = add(4, 5)
+print c
 
-def need_help(name):
-	print "Please do help me %s" % name + "."
-	print "I like to write essays."
-need_help("Fred")
+def sub(d, e):
+	return d - e
+f = sub(2, 4)
+print f
 
-def go_home(word,term):
-	print "I think I should go home %s" % word + "."
-	print "I want to go to sleep %s" % term + "."
-go_home("now","please")
+def mul(g, h):
+	return g * h
+i = mul(7, 5)
+print i
 
-def HNNNGGGG(letra)
-	print "LIET MI GO HOM %s" % letra + "..."
-	print letra * 3
-HNNNGGGG("PLES")
+def div(j, k):
+	return float(j)/k
+l = div(3, 5)
+print l
+
+def secondstohours(m):
+	return m/3600
+n = secondstohours(86400)
+print n
+
+def circlearea(o):
+	return (float(o) ** 2) * math.pi
+p = circlearea(5)
+print p
+
+def spherevolume(q):
+	return (float(q) ** 3) * math.pi * (float(4)/3)
+r = spherevolume(6)
+print r
+
+def averagespherevolumes(s):
+	return 
