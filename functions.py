@@ -122,15 +122,15 @@ print msg_box("A result of mul is " + str(product) + ".") #Printed my variable p
 print msg_box("Another result of mul is " + str(product1) + ".") #Printed my variable product1 in a msg_box.
 print msg_box("A result of div is " + str(quotient) + ".") #Printed my variable quotient in a msg_box.
 print msg_box("Another result of div is " + str(quotient1) + ".") #Printed my variable quotient1 in a msg_box.
-print msg_box(str(numberofhoursinseconds)) #Printed my variable numberofhousinseconds in a msg_box.
-print msg_box(str(numberofhoursinseconds1)) #Printed my variable numberofhousinseconds1 in a msg_box.
-print msg_box(str(volumeofsphere)) #Printed my variable volumeofsphere in a msg_box.
-print msg_box(str(volumeofsphere1)) #Printed my variable volumeofsphere1 in a msg_box.
-print msg_box(str(averageofvolumeofspheres)) #Printed my variable averageofvolumeofspheres in a msg_box.
-print msg_box(str(averageofvolumeofspheres1)) #Printed my variable averageofvolumeofspheres1 in a msg_box.
-print msg_box(str(heronsformula)) #Printed my variable heronsformula in a msg_box.
-print msg_box(str(heronsformula1)) #Printed my variable heronsformula1 in a msg_box.
-print msg_box(termalignedright) #Printed my variable termalignedright in a msg_box.
-print msg_box(termalignedright1) #Printed my variable termalignedright1 in a msg_box.
-print msg_box(centeredword) #Printed my variable centeredword in a msg_box.
-print msg_box(centeredword1) #Printed my variable centeredword1 in a msg_box.
+print msg_box("A result of hours_from_seconds is " + str(numberofhoursinseconds) + ".") #Printed my variable numberofhousinseconds in a msg_box.
+print msg_box("Another result of hours_from_seconds is " + str(numberofhoursinseconds1) + ".") #Printed my variable numberofhousinseconds1 in a msg_box.
+print msg_box("A result of sphere_volume is " + str(volumeofsphere) + ".") #Printed my variable volumeofsphere in a msg_box.
+print msg_box("Another result of sphere_volume is " + str(volumeofsphere1) + ".") #Printed my variable volumeofsphere1 in a msg_box.
+print msg_box("A result of avg_volume is " + str(averageofvolumeofspheres) + ".") #Printed my variable averageofvolumeofspheres in a msg_box.
+print msg_box("Another result of avg_volume is " + str(averageofvolumeofspheres1) + ".") #Printed my variable averageofvolumeofspheres1 in a msg_box.
+print msg_box("A result of area is " + str(heronsformula) + ".") #Printed my variable heronsformula in a msg_box.
+print msg_box("Another result of area is " + str(heronsformula1) + ".") #Printed my variable heronsformula1 in a msg_box.
+print msg_box("A result of right_align is " + termalignedright + ".") #Printed my variable termalignedright in a msg_box.
+print msg_box("Another result of right_align is " + termalignedright1 + ".") #Printed my variable termalignedright1 in a msg_box.
+print msg_box("A result of center is " + centeredword + ".") #Printed my variable centeredword in a msg_box.
+print msg_box("Another result of center is " + centeredword1 + ".") #Printed my variable centeredword1 in a msg_box.
