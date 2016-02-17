@@ -29,7 +29,15 @@ def go_home(word,term):
 	print "I want to go to sleep %s" % term + "."
 go_home("now","please")
 
-def HNNNGGGG(letra)
-	print "LIET MI GO HOM %s" % letra + "..."
-	print letra * 3
-HNNNGGGG("PLES")
+
+name = raw_input("What's your name? \n")
+word = raw_input("Type a word. \n")
+x = len(word)
+
+print name + ", did you know that \"" + word + "\" has " + str(x) + " letters in it?"
+
+bob = """
+{}, did you know that "{}" has {} letters in it?
+""".format(name, word, x) 
+
+print bob
