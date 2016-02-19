@@ -16,7 +16,7 @@ rmdir <folder name> - Remove the new folder.
 
 Git Commands
 
-git clone --config="http.proxy=http://semin2346:Min0920min0920@192.168.2.1:8080" https://github.com/semin2346-cmis/semin2346-cmis-wd.git: Clone the file via putting file address after the command.
+git clone --config="http.proxy=http://semin2346:Min0920min0920@192.168.2.1:8080" https://github.com/semin2346-cmis/semin2346-cmis-cs2.git
 git add <file name>: Adds it to hard drive (quasi-save).
 git commit -m "Commit Comment": Creates a checkpoint for the git add.
 git push: Sends everything to github.com.
