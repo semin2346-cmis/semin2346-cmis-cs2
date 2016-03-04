@@ -1,4 +1,4 @@
-# Total : (39/40)
+# Total : (39.5/40)
 
 #Part 1: Terminology (15 points)
 #1 1pt) What is the symbol "=" used for?
