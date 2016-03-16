@@ -37,12 +37,12 @@ def main():
 	estimation = raw_input("I'm thinking of a number between " + str(minimum) + " and " + str(maximum) + ".\n" + "What do you think it is?: ")
 	#Processing
 	chosen_number = int(random.randint(minimum, maximum))
-	difference = sub(int(estimation), chosen_number)	
+	difference = abs(sub(int(estimation), chosen_number))	
 	#Output
-	if chosen_number > str(abs(int(estimation))):	
+	if chosen_number < abs(int(estimation)):	
 		guess_small = guessing_small(chosen_number, estimation, difference)
 		print guess_small
-	elif chosen_number < str(abs(int(estimation))):
+	elif chosen_number > abs(int(estimation)):
 		guess_big = guessing_big(chosen_number, estimation, difference)
 		print guess_big
 	elif chosen_number == abs(int(estimation)):
