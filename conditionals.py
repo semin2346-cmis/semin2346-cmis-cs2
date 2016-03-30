@@ -16,8 +16,8 @@ def quot(a, b):
 #Addition quiz.
 def sum_questions():
 	#Boundaries for equation.	
-	minimum_sum = int(raw_input("Please type a minimum value for your questions. "))
-	maximum_sum = int(raw_input("Please type a maximum value for your questions. "))
+	minimum_sum = float(raw_input("Please type a minimum value for your questions. "))
+	maximum_sum = float(raw_input("Please type a maximum value for your questions. "))
 	#Variables for equation.
 	a1 = random.randint(minimum_sum, maximum_sum)
 	a2 = random.randint(minimum_sum, maximum_sum)
@@ -244,8 +244,8 @@ def difference_questions():
 #Division quiz.
 def quotient_questions():
 	#Boundaries for equation.	
-	minimum_quotient = float(raw_input("Please type a minimum value for your questions. "))
-	maximum_quotient = float(raw_input("Please type a maximum value for your questions. "))
+	minimum_quotient = float(raw_input("Please type a minimum value for your questions. This particular module will involve decimals. "))
+	maximum_quotient = float(raw_input("Please type a maximum value for your questions. This particular module will involve decimals. "))
 	#Variables for equation.
 	p1 = random.randint(minimum_quotient, maximum_quotient)
 	p2 = random.randint(minimum_quotient, maximum_quotient)
@@ -317,10 +317,86 @@ def quotient_questions():
 	else:
 		print "You failed. Your score is " + str(numbercorrect) + " out of 5."
 
+#Miscellaneous quiz.
+def answers_questions():
+	#Boundaries for equation.	
+	minimum_value = int(raw_input("Please type a minimum value for your questions. "))
+	maximum_value = int(raw_input("Please type a maximum value for your questions. "))
+	#Variables for equation.
+	u1 = random.random()
+	u2 = random.random()
+	v1 = random.randint(minimum_value, maximum_value)
+	v2 = random.randint(minimum_value, maximum_value)
+	w1 = random.randint(minimum_value, maximum_value)
+	w2 = random.randint(minimum_value, maximum_value)
+	x1 = random.randint(minimum_value, maximum_value)
+	x2 = random.randint(minimum_value, maximum_value)
+	y1 = random.randint(minimum_value, maximum_value)
+	y2 = random.randint(minimum_value, maximum_value)
+	#Answers for equation.
+	misc_answer1 = u1 <= u2
+	misc_answer2 = v1 != v2 and v1 == v2
+	misc_answer3 = not w1 > w2
+	misc_answer4 = 
+	misc_answer5 = 
+	#Variable for grading.
+	numbercorrect = 0
+	print "None of the numbers used in the questions will exceed the set extremes."
+	#Question 1.
+	misc1 = "Is " + str(u1) + "larger than " + str(u2) "? "
+	print misc1	
+	estimation_misc1 = raw_input("Answer to question 1: Answer using True or False. ")	
+	if estimation_misc1) == misc_answer1:
+		numbercorrect = numbercorrect + 1		
+		print "Correct."	
+	else:
+		print "Incorrect."
+	#Question 2.
+	misc2 = "Determine if this python statement is True or False. " + str(v1) + "!=" + str(v2) + "and " + str(v1) + "==" + str(v2) "."
+	print misc2
+	estimation_misc2 = raw_input("Answer to question 2: Answer using True or False. ")	
+	if estimation_misc2 == misc_answer2:
+		numbercorrect = numbercorrect + 1
+		print "Correct."
+	else:
+		print "Incorrect."
+	#Question 3.
+	misc3 = "Determine if this python statement is True or False. " + "not " + str(w1) + ">" + str(w2) + "."
+	print misc3
+	estimation_misc3 = raw_input("Answer to question 3: Answer using True or False. ")	
+	if estimation_misc3 == misc_answer3:
+		numbercorrect = numbercorrect + 1
+		print "Correct."
+	else:
+		print "Incorrect."
+	#Question 4.	
+	difference4 = str(n1) + "-" + str(n2)
+	print difference4	
+	estimation_difference4 = raw_input("Answer to question 4: ")
+	if int(estimation_difference4) == int(difference_answer4):
+		numbercorrect = numbercorrect + 1
+		print "Correct."
+	else:
+		print "Incorrect."	
+	#Question 5.
+	difference5 = str(o1) + "-" + str(o2)
+	print difference5	
+	estimation_difference5 = raw_input("Answer to question 5: ")
+	if int(estimation_difference5) == int(difference_answer5):
+		numbercorrect = numbercorrect + 1
+		print "Correct."
+	else:
+		print "Incorrect."
+	#Scoring.
+	if numbercorrect >= 3:
+		print "You passed. Your score is " + str(numbercorrect) + " out of 5."
+	else:
+		print "You failed. Your score is " + str(numbercorrect) + " out of 5."
+
 #Main function.
 def main():
 	print "Welcome to the conditionals mental maths game."
-	z = raw_input("Choose a category: Addition, Subtraction, Multiplication, Division.")
+	z = raw_input("Choose a category: Addition, Subtraction, Multiplication, Division, Misc. ")
 	if z == "Addition" or z == "addition":
 		sum_questions()
 	elif z == "Subtraction" or z == "subtraction":
@@ -329,6 +405,8 @@ def main():
 		product_questions()
 	elif z == "Division" or z == "division":
 		quotient_questions()
+	elif z == "Misc" and "misc":
+		answers_questions()
 	else:
 		print "Dude, you had one job. How can you already fail?"
 main()
