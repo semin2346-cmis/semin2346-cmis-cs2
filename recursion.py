@@ -23,10 +23,12 @@
 #		countdown(start - 1, stop)
 #countdown(10, 4)
 
-def adder(s): 
+def adder(total, s): 
 	s = raw_input("Next number: ")
 	if s == '':
-		print "No."
+		print "Running total: " + str(total) + "."
 	else:
-		adder(s)
-adder("s")
+		total = total + float(s)
+		print "Running total: " + str(total) + "."
+		return adder(total, s)
+adder(0, "s")
