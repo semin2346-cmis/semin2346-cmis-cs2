@@ -23,12 +23,57 @@
 #		countdown(start - 1, stop)
 #countdown(10, 4)
 
-def adder(total, s): 
-	s = raw_input("Next number: ")
-	if s == '':
-		print "Running total: " + str(total) + "."
+#def adder(total, s): 
+#	s = raw_input("Next number: ")
+#	if s == '':
+#		print "Running total: " + str(total) + "."
+#	else:
+#		total = total + float(s)
+#		print "Running total: " + str(total) + "."
+#		return adder(total, s)
+#adder(0, "s")
+
+def biggest(number):
+	term = raw_input("Next: ")
+	if term == '':
+		print str(number)
 	else:
-		total = total + float(s)
-		print "Running total: " + str(total) + "."
-		return adder(total, s)
-adder(0, "s")
+		if number > float(term):
+			biggest(number)
+		else:
+			biggest(float(term))
+biggest(-float("inf"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
