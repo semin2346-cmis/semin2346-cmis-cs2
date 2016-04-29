@@ -33,23 +33,35 @@
 #		return adder(total, s)
 #adder(0, "s")
 
-def biggest(number):
-	term = raw_input("Next: ")
-	if term == '':
-		print str(number)
+#def biggest(number):
+#	term = raw_input("Next: ")
+#	if term == '':
+#		print str(number)
+#	else:
+#		if number > float(term):
+#			biggest(number)
+#		else:
+#			biggest(float(term))
+#biggest(-float("inf"))
+
+#def smallest(number):
+#	term = raw_input("Next: ")
+#	if term == '':
+#		print str(number)
+#	else:
+#		if number < float(term):
+#			smallest(number)
+#		else:
+#			smallest(float(term))
+#smallest(float("inf"))
+
+def pow(x, y):
+	x = raw_input("Next number: ")
+	if x == '':
+		print str("No.")
 	else:
-		if number > float(term):
-			biggest(number)
-		else:
-			biggest(float(term))
-biggest(-float("inf"))
-
-
-
-
-
-
-
+		return float(x) * 
+pow(2, 4)
 
 
 
