@@ -337,52 +337,52 @@ def answers_questions():
 	misc_answer1 = u1 <= u2
 	misc_answer2 = v1 != v2 and v1 == v2
 	misc_answer3 = not w1 > w2
-	misc_answer4 = 
-	misc_answer5 = 
+	misc_answer4 = x1 > x2
+	misc_answer5 = y1 > y2
 	#Variable for grading.
 	numbercorrect = 0
 	print "None of the numbers used in the questions will exceed the set extremes."
 	#Question 1.
-	misc1 = "Is " + str(u1) + "larger than " + str(u2) "? "
-	print misc1	
+	misc1 = "Is " + str(u1) + " less than " + str(u2) + "? "
+	print misc1
 	estimation_misc1 = raw_input("Answer to question 1: Answer using True or False. ")	
-	if estimation_misc1) == misc_answer1:
+	if estimation_misc1 == str(misc_answer1):
 		numbercorrect = numbercorrect + 1		
 		print "Correct."	
 	else:
 		print "Incorrect."
 	#Question 2.
-	misc2 = "Determine if this python statement is True or False. " + str(v1) + "!=" + str(v2) + "and " + str(v1) + "==" + str(v2) "."
+	misc2 = "Determine if this python statement is True or False. " + str(v1) + " != " + str(v2) + " and " + str(v1) + " == " + str(v2) + "."
 	print misc2
 	estimation_misc2 = raw_input("Answer to question 2: Answer using True or False. ")	
-	if estimation_misc2 == misc_answer2:
+	if estimation_misc2 == str(misc_answer2):
 		numbercorrect = numbercorrect + 1
 		print "Correct."
 	else:
 		print "Incorrect."
 	#Question 3.
-	misc3 = "Determine if this python statement is True or False. " + "not " + str(w1) + ">" + str(w2) + "."
+	misc3 = "Determine if this python statement is True or False. " + "not " + str(w1) + " > " + str(w2) + "."
 	print misc3
 	estimation_misc3 = raw_input("Answer to question 3: Answer using True or False. ")	
-	if estimation_misc3 == misc_answer3:
+	if estimation_misc3 == str(misc_answer3):
 		numbercorrect = numbercorrect + 1
 		print "Correct."
 	else:
 		print "Incorrect."
 	#Question 4.	
-	difference4 = str(n1) + "-" + str(n2)
-	print difference4	
-	estimation_difference4 = raw_input("Answer to question 4: ")
-	if int(estimation_difference4) == int(difference_answer4):
+	misc4 = "Is " + str(x1) + " larger than " + str(x2) + "? "
+	print misc4	
+	estimation_misc4 = raw_input("Answer to question 3: Answer using True or False. ")	
+	if estimation_misc4 == str(misc_answer4):
 		numbercorrect = numbercorrect + 1
 		print "Correct."
 	else:
 		print "Incorrect."	
 	#Question 5.
-	difference5 = str(o1) + "-" + str(o2)
-	print difference5	
-	estimation_difference5 = raw_input("Answer to question 5: ")
-	if int(estimation_difference5) == int(difference_answer5):
+	misc5 = "Is " + str(y1) + " larger than " + str(y2) + "? "
+	print misc5	
+	estimation_misc5 = raw_input("Answer to question 3: Answer using True or False. ")	
+	if estimation_misc5 == str(misc_answer5):
 		numbercorrect = numbercorrect + 1
 		print "Correct."
 	else:
