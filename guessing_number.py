@@ -1,6 +1,3 @@
-import random
-import math
-
 def sub(a, b):
 	return int(a) - int(b)
 def add(c, d):
