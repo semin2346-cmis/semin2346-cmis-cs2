@@ -395,7 +395,10 @@ def answers_questions():
 
 #Main function.
 def main():
-	print "Welcome to the conditionals mental maths game."
+	name = raw_input("What is your name? ")
+	print """Hello, {}.
+Welcome to the conditionals mental maths game.
+""".format(name)
 	z = raw_input("Choose a category: Addition, Subtraction, Multiplication, Division, Misc. ")
 	if z == "Addition" or z == "addition":
 		sum_questions()
