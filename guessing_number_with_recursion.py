@@ -1,15 +1,15 @@
 import random
 import math
 
-def estimation(a, b):
+def estimation(a, correct):
 	guess = raw_input("I'm thinking of a number between " + str(0) + " and " + str(100) + ".\n" + "What do you think it is?: ") 
-	correct = int(random.randint(0, 100))
 	if guess == correct:
 		return "Good guess."
 	else:
 		print "Try again."
-		return estimation(0, guess) 
-estimation(0, 100)
+		print correct
+		return estimation(0, correct) 
+estimation(0, random.randint(0, 100))
 
 #def sub(a, b):
 #	return int(a) - int(b)
